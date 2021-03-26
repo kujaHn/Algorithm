@@ -6,16 +6,16 @@
 ## 목차
 
 ### 정렬
-> 1. 기본 정렬
->    1. 선택 정렬(Selection Sort)
->    2. 버블 정렬(BubbleSort)
->    3. 삽입 정렬(InsterSort)
->    4. 퀵 정렬(QuickSort)
->    5. 병합 정렬(MergeSort)  
+1. [기본 정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort)
+   1. 선택 정렬(Selection Sort)
+   2. 버블 정렬(BubbleSort)
+   3. 삽입 정렬(InsterSort)
+   4. 퀵 정렬(QuickSort)
+   5. 병합 정렬(MergeSort)  
     
 <br>
 
->2. 고급 정렬
+>2. [고급 정렬](https://github.com/kujaHn/Algorithm/tree/main/src/treesort)
 >    1. 힙 정렬(Heap Sort)
 >    2. 
 > 
