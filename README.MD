@@ -26,4 +26,4 @@
 ## 참고자료
 * 도서 : 알고리즘 문제 해결 전략
 * 도서 : 그림으로 정리한 알고리즘과 자료구조
-* 영상 : [실전 알고리즘 강좌 (나동빈)](https://www.youtube.com/watch?v=qQ5iLNjpxSk&list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz))
+* 영상 : [실전 알고리즘 강좌 (나동빈)](https://www.youtube.com/watch?v=qQ5iLNjpxSk&list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz)
