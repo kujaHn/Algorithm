@@ -7,7 +7,7 @@
 >   2. [버블정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#2-버블정렬)
 >   3. [삽입정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#3-삽입정렬)
 >   4. [퀵정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#4-퀵정렬)
->   5. [병합정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#5-선택정렬)
+>   5. [병합정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#5-%EB%B3%91%ED%95%A9%EC%A0%95%EB%A0%AC)
 ## Question.
 다음 숫자를 오름차순으로 정렬하는 프로그램을 작성하시오.
 ```
