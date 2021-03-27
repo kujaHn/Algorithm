@@ -4,10 +4,10 @@
 여기서는 가장 기본적인 정렬들을 다루겠다.  
 
 >   1. [선택정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#1-선택정렬)
->   2. 버블정렬
->   3. 삽입정렬
->   4. 퀵정렬
->   5. 병합정렬
+>   2. [버블정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#2-버블정렬)
+>   3. [삽입정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#3-삽입정렬)
+>   4. [퀵정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#4-퀵정렬)
+>   5. [병합정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#5-선택정렬)
 ## Question.
 다음 숫자를 오름차순으로 정렬하는 프로그램을 작성하시오.
 ```
