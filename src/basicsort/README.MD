@@ -3,7 +3,7 @@
 왜냐하면 정렬만큼 알고리즘의 효율성 차이를 가장 직관적으로 보여주는 것이 없기 때문이다.  
 여기서는 가장 기본적인 정렬들을 다루겠다.  
 
->   1. [선택정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#1-%EC%84%A0%ED%83%9D%EC%A0%95%EB%A0%AC)
+>   1. [선택정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#1-선택정렬)
 >   2. 버블정렬
 >   3. 삽입정렬
 >   4. 퀵정렬
