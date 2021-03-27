@@ -405,7 +405,7 @@ public int[] quickSort(int[] array, int start, int end) {
     }
 ```
 
-### 5. 병합 정렬
+### 5. 병합정렬
 * 퀵정렬과 마찬가지인 `분할 정복`방법을 채택하였다.
 * 퀵정렬과 달리 최악에도 `O(N*logN)`의 시간복잡도를 가진다.
 
