@@ -17,7 +17,7 @@
 
 >2. [고급 정렬](https://github.com/kujaHn/Algorithm/tree/main/src/advancedsort)
 >    1. 힙 정렬(Heap Sort)
->    2. 
+>    2. 계수 정렬(Counting Sort)
 > 
 > 
 > 
