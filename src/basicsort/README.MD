@@ -2,6 +2,15 @@
 알고리즘을 공부할때 가장 먼서 시작하는 파트가 `정렬(Sort)` 이다.  
 왜냐하면 정렬만큼 알고리즘의 효율성 차이를 가장 직관적으로 보여주는 것이 없기 때문이다.  
 여기서는 가장 기본적인 정렬들을 다루겠다.  
+
+## 목차
+* [선택정렬](#선택정렬)
+* [버블정렬](#버블정렬)
+* [삽입정렬](#삽입정렬)
+* [퀵정렬](#퀵정렬)
+* [병합정렬](#병합정렬)
+
+
 ## Question.
 다음 숫자를 오름차순으로 정렬하는 프로그램을 작성하시오.
 ```
@@ -9,7 +18,7 @@
 ```
 
 ## Solutions.
-### 1. 선택정렬
+### 선택정렬
 이러한 케이스에서 가장 쉽게 접근할 수 있는 방법이 `선택정렬`이다.
 
 선택정렬의 특징은 다음과 같다.  
@@ -51,7 +60,7 @@
 이 로직에서 중요한 것은 내가 `찾는 범위`에서 `가장 작은 수`를 찾아 그 범위의 `제일 앞의 원소`와 `자리를 바꾸는 것`을 `반복` 하는 것이다.
   
 코드를 구현해 보자.
-```
+```java
     public int[] selectionSort(int[] array) {
         int minIndex;
         int temp;
@@ -73,8 +82,10 @@
         return array;
     }
 ```
+
 ***
-### 2. 버블정렬
+
+### 버블정렬
 **바로 옆의 숫자와 비교해서 더 큰 값을 뒤로 보내는 방법**을 `버블정렬`이라고 한다.  
 버블정렬의 특징은 다음과 같다.
 * 정렬 중 가장 효율이 안좋음
@@ -116,7 +127,7 @@
 
 
 코드를 구현해 보자.
-```
+```java
 public int[] bubbleSort(int[] array) {
         int max;
         int maxIndex;
@@ -138,8 +149,10 @@ public int[] bubbleSort(int[] array) {
         return array;
     }
 ```
+
 ***
-### 3. 삽입정렬
+
+### 삽입정렬
 * **각 단계마다 처음부터 그 해당 원소까지 정렬을 확실하게 한 후** 다음 숫자로 넘어가는 방식.  
 * 단계들을 생략해서 보면 `원소 사이` 중 적절한 위치에 `삽입`하는 방식처럼 보여 `삽입방식`이라고 한다. 
 * `해당 엘리먼트`가 `자신이 있어야하는 위치를 정확하게 알고 있다`는 것이 특징이다.
@@ -210,7 +223,7 @@ public int[] bubbleSort(int[] array) {
 이 로직에서 중요한 것은 이 과정을 `n번째`에 수행 할 때 `n번째` 원소의 숫자가 정해진다.
 
 코드를 구현해 보자.
-```
+```java
    public int[] insertSort(int[] array) {
         int temp;
 
@@ -228,8 +241,10 @@ public int[] bubbleSort(int[] array) {
         return array;
     }
 ```
+
 ***
-### 4. 퀵정렬
+
+### 퀵정렬
 * 이때까지 배운 정렬들은 데이터량이 조금만 많아져도 사용하기가 매우 어려움. 이를 위한 빠른 정렬 알고리즘을 개발
 * N^2인 것을 반반씩 나누었기 때문에 반복이 획기적으로 줄어든다. (분할 정복 방법)
   ```
@@ -355,7 +370,7 @@ public int[] bubbleSort(int[] array) {
 <br>
 
 코드를 구현해 보자.
-```
+```java
 public int[] quickSort(int[] array, int start, int end) {
 
         // 원소가 1개인 경우 그대로 두기
@@ -399,7 +414,9 @@ public int[] quickSort(int[] array, int start, int end) {
     }
 ```
 
-### 5. 병합 정렬
+***
+
+### 병합정렬
 * 퀵정렬과 마찬가지인 `분할 정복`방법을 채택하였다.
 * 퀵정렬과 달리 최악에도 `O(N*logN)`의 시간복잡도를 가진다.
 
@@ -410,8 +427,6 @@ public int[] quickSort(int[] array, int start, int end) {
 ```
 * 합칠 때 `2의 배수`만큼 합친다.
 * 합칠 때 합쳐지는 각 원소들의 크기를 비교하여 정렬한 후 합친다.
-
-***
 
 **1st**
 * 1st. `1`과`10` / `3`과 `6` / `4`와 `7` / `9`와 `8` / `2`와 `5`를 합친다.
@@ -450,7 +465,7 @@ public int[] quickSort(int[] array, int start, int end) {
 
 코드를 구현해 보자. 이때 구역을 정해주는 코드와 정렬을 해주는 코드를 각각 분리해서 구현을 해야 한다.  
 
-```
+```java
     public void mergeSort(int[] array, int start, int end) {
 
         if (start < end) {
@@ -462,7 +477,7 @@ public int[] quickSort(int[] array, int start, int end) {
         }
     }
 ```
-```
+```java
     public int[] merge(int[] array, int start, int middle, int end){
         int[] sortedArray = new int[10];
         int i = start;
