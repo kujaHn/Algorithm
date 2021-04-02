@@ -2,12 +2,6 @@
 알고리즘을 공부할때 가장 먼서 시작하는 파트가 `정렬(Sort)` 이다.  
 왜냐하면 정렬만큼 알고리즘의 효율성 차이를 가장 직관적으로 보여주는 것이 없기 때문이다.  
 여기서는 가장 기본적인 정렬들을 다루겠다.  
-
->   1. [선택정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#1-선택정렬)
->   2. [버블정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#2-버블정렬)
->   3. [삽입정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#3-삽입정렬)
->   4. [퀵정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#4-퀵정렬)
->   5. [병합정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort#5-%EB%B3%91%ED%95%A9%EC%A0%95%EB%A0%AC)
 ## Question.
 다음 숫자를 오름차순으로 정렬하는 프로그램을 작성하시오.
 ```
@@ -405,7 +399,7 @@ public int[] quickSort(int[] array, int start, int end) {
     }
 ```
 
-### 5. 병합정렬
+### 5. 병합 정렬
 * 퀵정렬과 마찬가지인 `분할 정복`방법을 채택하였다.
 * 퀵정렬과 달리 최악에도 `O(N*logN)`의 시간복잡도를 가진다.
 

@@ -6,24 +6,24 @@
 ## 목차
 
 ### 정렬
->**1. [기본 정렬](https://github.com/kujaHn/Algorithm/tree/main/src/basicsort)**
->   >   1. 선택 정렬(Selection Sort)
->   >   2. 버블 정렬(BubbleSort)
->   >   3. 삽입 정렬(InsterSort)
->   >   4. 퀵 정렬(QuickSort)
->   >   5. 병합 정렬(MergeSort)  
+> 1. 기본 정렬
+>    1. 선택 정렬(Selection Sort)
+>    2. 버블 정렬(BubbleSort)
+>    3. 삽입 정렬(InsterSort)
+>    4. 퀵 정렬(QuickSort)
+>    5. 병합 정렬(MergeSort)  
     
 <br>
 
->**2. [고급 정렬](https://github.com/kujaHn/Algorithm/tree/main/src/treesort)**
->   >   1. 힙 정렬(Heap Sort)
->   >   2. 
->   >
->   >
->   >
->   >
+>2. 고급 정렬
+>    1. 힙 정렬(Heap Sort)
+>    2. 
+> 
+> 
+> 
+> 
 
 ## 참고자료
 * 도서 : 알고리즘 문제 해결 전략
 * 도서 : 그림으로 정리한 알고리즘과 자료구조
-* 영상 : [실전 알고리즘 강좌 (나동빈)](https://www.youtube.com/watch?v=qQ5iLNjpxSk&list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz)
+* 영상 : [실전 알고리즘 강좌 (나동빈)](https://www.youtube.com/watch?v=qQ5iLNjpxSk&list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz))

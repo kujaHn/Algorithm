@@ -14,9 +14,9 @@
 * 최대 힙 구조는 **부모 노드의 값이 자식 노드보다 항상 커야 한다**
 * 힙 정렬은, **최대 힙구조가 아닌 구간의 두 자식 중 더 큰 자식과 자신의 위치를 바꾸는 알고리즘 이다.**
 * 시간복잡도
-```
-O(log N)
-```
+    ```
+    O(log N)
+    ```
 ### 로직
 **Main Idea**
 ```
@@ -29,5 +29,83 @@ O(log N)
 4. 반복.
 
 **1st**  
+사진 첨부  
+**2nd**  
+사진 첨부  
+
+<br>
+
+* 코드 구현
+```
+int[] heapSort(int[] array) {
+
+        // 1차 최대 힙 구조로 변경
+        for (int i = 1; i < array.length; i++) {
+            int c = i;
+            do {
+                int root = (c - 1) / 2;
+                if (array[root] < array[c]) {
+                    int temp = array[root];
+                    array[root] = array[c];
+                    array[c] = temp;
+                }
+                c = root;
+            } while (c != 0);
+        }
+
+        // 루트노드를 최하위 노드로 보내기. (밀어내기)
+        for (int i = array.length - 1; i >= 0; i--) {
+            int temp = array[0];
+            array[0] = array[i];
+            array[i] = temp;
+            int root = 0;
+            int c = 1;
+            do {
+                c = 2 * root + 1;
+                //자식 중 더 큰값 찾기
+                if (c < i - 1 && array[c] < array[c + 1]) {
+                    c++;
+                }
+                //루트보다 자식이 더 크다면 교환
+                if (c < i && array[root] < array[c]) {
+                    temp = array[root];
+                    array[root] = array[c];
+                    array[c] = temp;
+                }
+                root = c;
+            } while (c < i);
+        }
+
+        return array;
+    }
+```
+
+***
+
+## Question
+다음 숫자를 오름차순으로 정렬하는 프로그램을 작성하시오.
+```
+[1 3 2 4 3 2 5 3 1 2 3 4 4 3 5 1 2 3 5 2 3 1 4 3 5 1 2 1 1 1]
+```
+
+## 계수 정렬
+* **범위 조건이 있는 경우**에 한해 굉장히 빠른 알고리즘을 계수정렬이라고 한다.
+* 시간복잡도
+    ```
+    O(N)
+    ```
+
+### 로직
+**Main Idea**
+  ```
+  크기를 기준으로 갯수를 세자.
+  ```
+* 크기를 기준으로 갯수만 세주면 되기 때문에 위치를 바꿀 필요가 없음.
+* 그렇기 때문에 **모든 데이터에 한 번씩만 접근하면 된다.**
+
+**1st**  
+범위 조건 내에 있는 모든 크기들을 표시할 수 있는 배열 생성.  
+<img src = "Algorithm/image/counting-sort1.png">  
 
 **2nd**  
+Question 인덱스의 첫번째 원소 탐색 후 해당 인덱스의 크기를 1 증가.
